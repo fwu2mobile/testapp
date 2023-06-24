@@ -3,6 +3,7 @@ import links from "../links"
 
 function createLink(data){
     return <Link 
+    key = {data.id}
     name= {data.name}
     url = {data.url}
     />
@@ -10,12 +11,12 @@ function createLink(data){
 
 function NavBar(){
 
-    return <ul>
+    return (<ul>
         
         {links.map(createLink)}
 
 
-    </ul>
+    </ul>)
 }
 
 export default NavBar;

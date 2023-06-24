@@ -1,8 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 import App from "./components/App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import {BrowserRouter as Router, Switch, Route, Routes}
+ from "react-router-dom"
+import Layout from "./Layout"
+
+ReactDOM.render(
+<div><Router>
+    <Routes>
+        <Route path="/" element={<Layout />}>
+            <Route  index element = {<App.Home />}/>
+            <Route  path ="menu" element = {<App.Menu />}/>
+            <Route path="about" element = {<App.About />}/>
+            
+        </Route>
+        
+    </Routes>
+</Router>
+
+<h1>h1 section</h1>
+</div>
+
+
+
+,    document.getElementById("root"));
 
 //1. Apply CSS styles to App.jsx component
 //to match the appearance on the completed app:

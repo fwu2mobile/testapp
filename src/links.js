@@ -3,12 +3,17 @@ const links = [
     {
         id: 1,
         linkname : "Home",
-        url : "www.xnxx.com"
+        url : "/"
     },
     {
         id: 2,
         linkname: "Menu",
-        url: "www.google.com"
+        url: "menu"
+    },
+    {
+        id: 3,
+        linkname: "About",
+        url: "/"
     }
 
 

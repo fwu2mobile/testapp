@@ -1,5 +1,17 @@
+ul{
+  list-style-type: none;
+  margin: 10;
+  padding: 10;
+  overflow: hidden;
+}
+
 li {
-  float: left;
+  float:left;
+  font-size: x-large;
+}
+
+div {
+  border: 1px outset red;
 }
 
 a {
@@ -7,6 +19,8 @@ a {
   padding: 8px  ;
   background-color: #dddddd;
 }
+
+
 
 body {
   font-family: sans-serif;

@@ -1,22 +1,27 @@
 import React from "react"
 import links from "../links"
+import MenuLink from "./MenuLink"
 
 function createLink(data){
-    return <Link 
+    return (
+    <MenuLink 
     key = {data.id}
-    name= {data.name}
-    url = {data.url}
+    linkname= {data.linkname}
+    linkurl = {data.url}
     />
+    )
 }
 
 function NavBar(){
 
-    return (<ul>
+    return (
+    <ul>
         
         {links.map(createLink)}
 
 
-    </ul>)
+    </ul>
+    )
 }
 
 export default NavBar;

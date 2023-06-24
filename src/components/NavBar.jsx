@@ -1,13 +1,19 @@
 import React from "react"
+import links from "../links"
+
+function createLink(data){
+    return <Link 
+    name= {data.name}
+    url = {data.url}
+    />
+}
 
 function NavBar(){
 
     return <ul>
         
-        <li><a href="">Home</a></li>
-        <li><a href="">Menu</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">About</a></li>
+        {links.map(createLink)}
+
 
     </ul>
 }

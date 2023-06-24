@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import contacts from "../contacts"
-import MenuBar from "./MenuBar";
+import MenuBar from "./NavBar";
 
 function CreateCard(contact) {
 
@@ -18,11 +18,13 @@ function App() {
 
   return (
     <div>
-      <h1 className="heading">Resturant Name</h1>
+      <h1 className="heading">蛋糕</h1>
+      
+      <NavBar />
 
       {contacts.map(CreateCard)}
       
-      <MenuBar />
+      
 
     </div>
   );

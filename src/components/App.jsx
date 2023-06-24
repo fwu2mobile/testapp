@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import contacts from "../contacts"
-import MenuBar from "./NavBar";
+import NavBar from "./NavBar";
 
 function CreateCard(contact) {
 
